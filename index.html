@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 style="text-align: center;">Search and Algorithm Visualization</h2>
+    <div class="container">
+      <div class="generate-input">
+        <div class="checkbox">
+          <p>Choose dataset</p>
+          <input
+            type="radio"
+            id="Manual-Inputs"
+            name="Input-type"
+            value="Manual-Inputs"
+          />
+          <label for="Manual-Inputs">Manual Inputs</label><br />
+          <input
+            type="radio"
+            id="Random-Inputs"
+            name="Input-type"
+            value="Random-Inputs"
+            checked
+          />
+          <label for="Random-Inputs">Random Inputs</label><br />
+        </div>
+        <div class="input-container">
+          <div class="Size-container">
+            <label for="Size">Size:</label>
+            <input id="Size" type="number" step="1" />
+          </div>
+          <div class="user-Input-container">
+            <input
+              style="width: 100%;"
+              id="user-Input"
+              type="text"
+              placeholder="    enter the sequence of numbers seperated by ,"
+            />
+          </div>
+        </div>
+        <div>
+          <button class="btn" id="generate">Generate</button>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="visualization-controllers">
+          <div class="Search-container">
+            <label for="searchvalue">search value</label>
+            <input id="searchvalue" type="number" step="1" />
+          </div>
+          <button class="btn" id="linearsearch">linear search</button>
+          <button class="btn" id="binarysearch">binary search</button>
+
+          <button class="btn" id="bubbleSortBtn">Bubble Sort</button>
+          <button class="btn" id="selectionSortBtn">
+            Selection Sort
+          </button>
+        </div>
+
+        <div class="visualize-input"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="sort.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
